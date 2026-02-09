@@ -1,0 +1,139 @@
+.carousel-wrappers {
+  position: relative;
+  width: 100%;
+  padding: 0 4vw;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+.carousel {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 16 / 7; 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.slide {
+  position: absolute;
+  top: 0;
+  height: 100%;
+  border-radius: 20px;
+  transition: all 0.7s ease;
+  opacity: 0;
+  transform: scale(0.7);
+}
+.activeSlide {
+  opacity: 1;
+  width: 60%;
+  left: 50%;
+  transform: translateX(-50%) scale(1);
+  z-index: 3;
+}
+.lastSlide {
+  opacity: 0.7;
+  width: 45%;
+  left: 5%;
+  transform: scale(0.85);
+  z-index: 2;
+}
+.nextSlide {
+  opacity: 0.7;
+  width: 45%;
+  right: 5%;
+  transform: scale(0.85);
+  z-index: 2;
+}
+.play-btns {
+  position: absolute;
+  top: 40%;
+  left: 40%;
+
+  background: linear-gradient(135deg, #8a2be2, #00bfff);
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  animation: pulse 2s infinite;
+  cursor: pointer;
+}
+.play-icons {
+  color: white;
+  font-size: 50px;
+}
+.arrow {
+  position: absolute !important;
+  top: 50%;
+  transform: translateY(-50%);
+  color: white !important;
+  z-index: 5;
+  background-color: rgba(0, 0, 0, 0.4) !important;
+  transition: 0.3s;
+}
+.arrow:hover {
+  background-color: rgba(0, 0, 0, 0.7) !important;
+}
+.left {
+  left: 3vw;
+}
+.right {
+  right: 3vw;
+}
+@keyframes pulse {
+  0% {
+    box-shadow: 0 0 0 0 rgba(138, 43, 226, 0.7);
+  }
+  70% {
+    box-shadow: 0 0 0 20px rgba(138, 43, 226, 0);
+  }
+  100% {
+    box-shadow: 0 0 0 0 rgba(138, 43, 226, 0);
+  }
+}
+
+
+@media (max-width: 1024px) {
+  .carousel {
+    transform: scale(0.9);
+  }
+}
+
+@media (max-width: 850px) {
+  .carousel {
+    transform: scale(0.8);
+  }
+}
+
+@media (max-width: 680px) {
+  .carousel {
+    transform: scale(0.75);
+  }
+}
+
+@media (max-width: 500px) {
+  .carousel-wrapper {
+    padding: 0 1vw; 
+  }
+  .carousel {
+    transform: scale(0.75); 
+  }
+  .play-btn {
+    width: 55px;
+    height: 55px;
+  }
+  .play-icon {
+    font-size: 32px;
+  }
+}
+@media (max-width: 380px) {
+  .carousel-wrapper {
+    padding: 0;
+  }
+  .carousel {
+    transform: scale(0.8); 
+  }
+}

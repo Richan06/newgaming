@@ -1,0 +1,253 @@
+.slider-container {
+  position: relative;
+  width: 86%;
+  margin: 0 auto;
+  padding: 40px 0;
+  font-family: 'oxanium';
+  
+}
+
+
+.slick-track {
+  display: flex ;
+  gap: 20px ;
+}
+
+.slick-slide {
+  height: inherit ;
+}
+.slick-slide > div {
+  height: 100%;
+}
+
+.slide-box {
+  height: 320px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  display: flex;
+  overflow: visible;
+}
+
+
+
+
+.arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  
+    background: linear-gradient(to right bottom, rgb(249, 12, 255), rgb(224, 39, 255), rgb(197, 52, 255), rgb(169, 62, 255), rgb(138, 68, 255), rgb(101, 96, 255), rgb(60, 115, 255), rgb(0, 129, 255), rgb(0, 156, 255), rgb(0, 179, 255), rgb(0, 198, 245), rgb(12, 215, 232)) rgb(249, 12, 255);
+  color: rgb(255, 255, 255) ;
+
+  z-index: 2;
+  transition: all 0.3s ease;
+}
+
+
+.left-arrow {
+  left: -40px;
+}
+.right-arrow {
+  right: -40px;
+}
+
+
+@media (max-width: 900px) {
+  .slide-box {
+    height: 280px;
+  }
+  .left-arrow {
+    left: -25px;
+  }
+  .right-arrow {
+    right: -25px;
+  }
+}
+@media (max-width: 600px) {
+  .arrow {
+    display: none;
+  }
+  .slide-box {
+    height: 250px;
+    padding: 30px 15px;
+  }
+}
+
+
+
+.rhombus-container {
+    position: relative;
+    width: 100%; 
+    height: 320px; 
+    display: flex;
+    align-items: end;
+    overflow: visible;
+}
+
+.rhombus {
+    position: absolute;
+    transform: skewX(-10deg); 
+    transform-origin: bottom right;
+    box-shadow: 0 0 15px rgba(0, 255, 255, 0.4); 
+}
+.rhombus-1 {
+    background: linear-gradient(
+        135deg, 
+        #ff00f0 0%,     
+        #00aaff 100%   
+    );
+   height: 41%;
+   width: 52%;
+   opacity: 0.6;
+   clip-path: polygon(0% 0%, 90% 0px, 100% 10%, 100% 100%, 0px 100%);
+    z-index: 4; 
+}
+.rhombus-1:hover{
+  height: 43%;
+}
+.rhombus-2 {
+    background: linear-gradient(to right bottom, rgb(249, 12, 255), rgb(224, 39, 255), rgb(197, 52, 255), rgb(169, 62, 255), rgb(138, 68, 255), rgb(101, 96, 255), rgb(60, 115, 255), rgb(0, 129, 255), rgb(0, 156, 255), rgb(0, 179, 255), rgb(0, 198, 245), rgb(12, 215, 232)) rgb(249, 12, 255);
+    border-radius: 2px;
+    clip-path: polygon(0% 0%, 80% 0px, 100% 10%, 100% 100%, 0px 100%);
+    height: 65%;
+    width: 38%;
+    padding: 1%;
+    z-index: 2;
+    margin-left: 6%;
+    opacity: 0.5;
+}
+.rhombus-2:hover{
+  height: 70%;
+  background-color: #0081ff;
+}
+.rhombus-3 {
+        background: linear-gradient(to right bottom, rgb(249, 12, 255), rgb(224, 39, 255), rgb(197, 52, 255), rgb(169, 62, 255), rgb(138, 68, 255), rgb(101, 96, 255), rgb(60, 115, 255), rgb(0, 129, 255), rgb(0, 156, 255), rgb(0, 179, 255), rgb(0, 198, 245), rgb(12, 215, 232)) rgb(249, 12, 255);
+    border-radius: 2px;
+  height: 55%;
+  margin-left: 14%;
+  width: 62%;
+    z-index: 3; 
+    opacity: 0.8;
+    clip-path: polygon(0% 0%, 90% 0px, 100% 10%, 100% 100%, 0px 100%);
+}
+
+
+
+.rhombus-4 {
+    background: linear-gradient(to right bottom, rgb(249, 12, 255), rgb(224, 39, 255), rgb(197, 52, 255), rgb(169, 62, 255), rgb(138, 68, 255), rgb(101, 96, 255), rgb(60, 115, 255), rgb(0, 129, 255), rgb(0, 156, 255), rgb(0, 179, 255), rgb(0, 198, 245), rgb(12, 215, 232)) rgb(249, 12, 255);
+    border-radius: 2px;
+    clip-path: polygon(0% 0%, 80% 0px, 100% 10%, 100% 100%, 0px 100%);
+    opacity: 0.7;
+    padding-left: 10px;
+    margin-left: 21%;
+    height: 85%;
+    width: 45%;
+    z-index: 1;
+}
+.rhombus-4:hover{
+  height: 90%;
+}
+.scroll-img{
+    width:250px;
+    height: auto;
+    z-index: 5;
+    margin-left: 2%;
+}
+
+.white-name-box{
+    clip-path: polygon(20% 0%, 100% 0%, 85% 100%, 0% 100%);
+    width: 60px;
+    margin-left: -75%;
+    height: 10px;
+    background-color: white;
+    z-index: 7;
+}
+.blue-name-box{
+  
+    background-image: repeating-linear-gradient(-45deg, rgba(255, 255, 255, 0.25), rgba(255, 255, 255, 0.25) 1px, transparent 1px, transparent 6px);
+    z-index: 6;
+
+    margin-top: -6%;
+    width: 180px;
+    height: 36px;
+    padding-left: 20px;
+    padding-bottom: 2px;
+    clip-path: polygon(10% 0%, 100% 0%, 90% 100%, 0% 100%);
+     background: linear-gradient(to right bottom, #f90cff, #e027ff, #c534ff, #a93eff, #8a44ff, #6560ff, #3c73ff, #0081ff, #009cff, #00b3ff, #00c6f5, #0cd7e8);
+  
+}
+.game-box{
+    background-color: white;
+    width: 150px;
+    clip-path: polygon(5% 0%, 100% 0%, 95% 100%, 0% 100%);
+    padding-left: 20px;
+
+}
+
+.small-box{
+  width: 20px;
+  height:32px;
+  background-color: #0081ff;
+  margin-left: 63%;
+  margin-top: -12%;
+  clip-path: polygon(60% 0%, 100% 0%, 40% 100%, 0% 100%);
+}
+.small-box2{
+   width: 20px;
+  height:32px;
+  background-color: #ffffff;
+  margin-left: 67%;
+  margin-top: -10%;
+  clip-path: polygon(60% 0%, 100% 0%, 40% 100%, 0% 100%);
+}
+
+.rhombus-container:hover .rhombus-1 {
+  height: 55%; 
+  animation: incre 0.5s ease-out forwards
+}
+@keyframes incre{
+  0%{
+    height: 43%
+  }
+  100%{
+    height:55%
+  }
+}
+.rhombus-container:hover .rhombus-2 {
+  height: 72%; 
+  animation: incre2 0.7s ease-out forwards
+
+}
+@keyframes incre2{
+  0%{
+    height: 65%
+  }
+  100%{
+    height:72%
+  }
+}
+.rhombus-container:hover .rhombus-3 {
+  height: 67%; 
+  animation: incre3 0.9s ease-out forwards
+}
+@keyframes incre3{
+  0%{
+    height: 55%
+  }
+  100%{
+    height:67%
+  }
+}
+.rhombus-container:hover .rhombus-4 {
+  height: 94%; 
+  animation: incre4 0.5s ease-out forwards
+}
+@keyframes incre4{
+  0%{
+    height: 85%
+  }
+  100%{
+    height:94%
+  }
+}
+
+

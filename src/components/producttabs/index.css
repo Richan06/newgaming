@@ -1,0 +1,163 @@
+
+.product-tabs {
+  width: 86%;
+  margin-top: 100px;
+  margin-left: 7%;
+  margin-right: 7%;
+  color: white;
+  font-family: "Orbitron", sans-serif;
+  background: transparent;
+  padding: 20px 0;
+}
+
+
+.tab-header {
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  gap: 40px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+  padding-bottom: 10px;
+}
+
+.tab-link {
+  cursor: pointer;
+  font-size: 16px;
+  transition: all 0.3s;
+  position: relative;
+  color: #ccc;
+}
+
+.tab-link.active {
+  color: #a047ff;
+}
+
+.tab-link.active::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -2px;
+  width: 100%;
+  height: 3px;
+  background: #a047ff;
+  border-radius: 2px;
+}
+
+
+.tab-box {
+  background: rgba(255, 255, 255, 0.05);
+  padding: 25px;
+  margin-top: 25px;
+  border-radius: 10px;
+  width: 100%;
+}
+
+.tab-content {
+  line-height: 1.8;
+}
+
+.tab-info {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 25px;
+  gap: 50px;
+}
+
+.highlight {
+  color: #a047ff;
+}
+
+.size-table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: center;
+}
+
+.size-table th,
+.size-table td {
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  padding: 10px;
+}
+
+
+.review-section {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 25px;
+}
+
+.review-card {
+  flex: 1;
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 10px;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  position: relative;
+}
+
+.review-card img {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+}
+
+.review-date {
+  color: #aaa;
+  font-size: 13px;
+}
+
+.stars {
+  position: absolute;
+  right: 20px;
+  top: 20px;
+  color: orange;
+  font-size: 20px;
+}
+
+
+@media (max-width: 1024px) {
+  .tab-header {
+    gap: 25px;
+  }
+}
+
+@media (max-width: 768px) {
+  .tab-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+
+  .review-section {
+    flex-direction: column;
+  }
+
+  .review-card {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .stars {
+    position: static;
+    margin-top: 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  .product-tabs {
+    width: 86%;
+    margin-left: 7%;
+    margin-right: 7%;
+    padding: 10px 0;
+  }
+
+  .tab-link {
+    font-size: 14px;
+  }
+
+  .tab-box {
+    padding: 15px;
+  }
+}

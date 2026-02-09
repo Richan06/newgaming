@@ -1,0 +1,26 @@
+.background-img{
+    background-image:url('../../assets/images/body-bg.jpg') ;
+    margin: 0%;
+    padding: 0%;
+    height: auto;
+    position: absolute;
+    width: 100%;
+
+}
+
+.clip-box-first{
+    width: 200px;
+    height: 20px;
+    background-color: hsl(240, 63%, 13%);
+    margin-top: 100px;
+    clip-path:polygon(0 0, 100% 0, 100% calc(100% - 40px), calc(100% - 40px) 100%, 0 100%) ;
+    
+}
+.clip-box-second{
+    width: 200px;
+    height: 20px;
+    background-color: hsl(240, 63%, 13%);
+    margin-top: 100px;
+    clip-path:polygon(0 0, 100% 0, 100% 100%, 40px 100%, 0 calc(100% - 40px)) ;
+    
+}

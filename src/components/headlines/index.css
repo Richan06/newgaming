@@ -1,0 +1,109 @@
+.fullwidth-container{
+  width: 100%;
+  margin-top: 50px;
+}
+.fixedwidth-container{
+  width: 100%;
+}
+ 
+.container-head{
+  display: flex;
+justify-content: center;
+gap: 90px;
+flex-wrap: wrap;}
+
+
+.box1{
+
+  background-color: rgba(12, 12, 53, 0.9);
+  color: white;
+
+  border-radius: 10px;
+  max-width: 295px;
+}
+.box2 {
+
+  background-color: rgba(12, 12, 53, 0.9);
+  color: white;
+
+  border-radius: 10px;
+  max-width: 295px;
+}
+.box3 {
+
+  background-color: rgba(12, 12, 53, 0.9);
+  color: white;
+
+  border-radius: 10px;
+  max-width: 295px;
+}
+.inside-img{
+  max-width: 295px;
+}
+
+.small-icon {
+  display: flex;
+  gap: 0px;
+  align-items: center; 
+ 
+  font-family: 'oxanium';
+}
+.mini-line{
+  width: 30px;
+  height: 5px;
+   background-color: blueviolet;
+   border: none;
+   display: inline-block;
+   padding-top: 1px;
+   margin-top: 4px;
+}
+
+.hover-group:hover .down-lin::after {
+
+    width: 100%; 
+}
+
+
+.hover-group:hover .down-lin1::after {
+
+    width: 40%;
+}
+
+.down-lin {
+    position: relative;
+    transition: color 0.3s ease-in-out; 
+}
+
+.down-lin::after { 
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0px;
+    width: 0; 
+    height: 4px;
+    display: block; 
+    background-color: blueviolet;
+  
+    transition: width 0.3s ease-out; 
+}
+
+.down-lin1 {
+    position: relative;
+    transition: color 0.3s ease-in-out; 
+}
+
+.down-lin1::after { 
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0px;
+    width: 0; 
+    height: 4px;
+    display: block; 
+    background-color: blueviolet;
+    
+    transition: width 0.3s ease-out; 
+    
+
+    transition-delay: 0.3s; 
+}

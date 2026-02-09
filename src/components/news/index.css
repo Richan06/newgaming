@@ -1,0 +1,43 @@
+.news-div{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    padding-top: 70px;
+    position: relative;
+    opacity: 0;
+   transform: translateY(40px); 
+   transition: all 2s ease-out;
+}
+.news-div.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.news-heading{
+    font-family: "oxanium";
+    font-weight: 600;
+    color: white;
+    width: 50%;
+    margin-top: -10px;
+  
+
+}
+.news-heading p{
+    color: blueviolet;
+    display: inline;
+}
+.news-paragraph{
+    color: white;
+    font-size: 15px;
+    font-family: 'oxanium';
+    margin-top: 7px;
+}
+.news-paragraphs{
+    color: white;
+    font-size: 15px;
+    font-family: 'oxanium';
+    margin-top: -12px;
+
+}

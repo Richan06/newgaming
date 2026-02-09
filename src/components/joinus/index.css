@@ -1,0 +1,108 @@
+.joinus-container {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+.joinus-box{
+  width: 100;
+}
+
+.join-btn {
+  height: 48px;
+  padding: 14px 40px;
+  font-family: 'oxanium';
+  color: white;
+  border: none;
+  font-weight: 700;
+  font-size: 14px;
+  clip-path: polygon(0 0, calc(100% - 15px) 0, 100% 15px, 100% 100%, 0 100%);
+  background: linear-gradient(165deg, rgb(255, 4, 255), hsl(280, 96%, 50%), rgb(50, 8, 240), rgb(86, 178, 248));
+  cursor: pointer;
+}
+
+.play-btn-wrapper {
+  position: relative;
+  width: 80px;
+  height: 80px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.play-btn {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  background: white;
+  color: rgb(255, 255, 255);
+  font-size: 52px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  z-index: 2;
+  box-shadow: 0 0 15px rgba(255, 255, 255, 0.8);
+  transition: transform 0.2s ease;
+   background: linear-gradient(165deg, rgb(255, 45, 255), hsl(280, 98%, 59%), rgb(99, 66, 245), rgb(112, 189, 248));
+}
+
+.play-btn:hover {
+  transform: scale(1.1);
+}
+
+.pulse {
+  position: absolute;
+  inset: 0;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(255,255,255,0.8) 0%, rgba(255,255,255,0.2) 80%, transparent 100%);
+  animation: ripple 2s infinite ease-out;
+  z-index: 1;
+}
+
+.pulse:nth-child(2) { animation-delay: 0s; }
+.pulse:nth-child(3) { animation-delay: 0.3s; }
+.pulse:nth-child(4) { animation-delay: 0.6s; }
+
+@keyframes ripple {
+  0% { transform: scale(1); opacity: 0.9; }
+  80% { transform: scale(2.5); opacity: 0; }
+  100% { transform: scale(3); opacity: 0; }
+}
+
+
+@media (max-width: 400px) {
+  .join-btn {
+    font-size: 10px;
+    padding: 10px 25px;
+  }
+
+  .play-btn-wrapper {
+    width: 60px;
+    height: 60px;
+  }
+
+  .play-btn {
+    width: 60px;
+    height: 60px;
+    font-size: 26px;
+  }
+}
+
+
+@media (max-width: 300px) {
+  .join-btn {
+    font-size: 9px;
+    padding: 8px 20px;
+  }
+
+  .play-btn-wrapper {
+    width: 50px;
+    height: 50px;
+  }
+
+  .play-btn {
+    width: 50px;
+    height: 50px;
+    font-size: 22px;
+  }
+}
+

@@ -1,0 +1,67 @@
+.address-container{
+    margin: 0%;
+    padding: 0%;
+    margin-top: 150px;
+}
+.address-fullwidth{
+    width: 86%;
+    margin-left:7%;
+    margin-right: 7%;
+}
+.mini-mui-icons{
+       background-color: rgba(152, 65, 255, 0.3);
+    clip-path: polygon(0% 0%, 70% 0, 100% 30%, 100% 100%, 0 100%);
+    padding: 14px;
+}
+.input-box-one{
+    width: 40%;
+    padding: 17px;
+    background-color: rgb(6, 6, 59);
+    border: none;
+    box-shadow: 2px 2px 4px rgb(13, 13, 13);
+}
+.input-box-one::placeholder{
+    color: rgb(205, 205, 205);
+    font-family: 'oxanium';
+}
+.input-box-two{
+    width: 40%;
+    padding: 17px;
+    background-color: rgb(6, 6, 59);
+    box-shadow: 2px 2px 4px rgb(13, 13, 13);
+     border: none;
+}
+
+.input-box-two::placeholder{
+    color: rgb(205, 205, 205);
+    font-family: 'oxanium';
+}
+.input-box-three{
+     width: 86%;
+    padding: 17px;
+     background-color: rgb(6, 6, 59);
+     box-shadow: 2px 2px 4px rgb(13, 13, 13);
+     border: none;
+     height: 120px;
+     margin-top: 6px;
+     
+
+}
+.input-box-three::placeholder{
+    color: rgb(205, 205, 205);
+    font-family: 'oxanium';
+}
+.send-message-btn{
+    padding: 10px;
+    padding-left:15px ;
+    padding-right:15px ;
+    margin-top: 5px;
+    color: white;
+    font-family: 'oxanium';
+    font-weight: 600;
+        background: #f90cff;
+    background-image: linear-gradient(to right bottom, #f90cff, #e027ff, #c534ff, #a93eff, #8a44ff, #6560ff, #3c73ff, #0081ff, #009cff, #00b3ff, #00c6f5, #0cd7e8);
+    clip-path: polygon(0% 0%, 90% 0, 100% 30%, 100% 100%, 0 100%);
+    border: none;
+    font-size: 15px;
+}

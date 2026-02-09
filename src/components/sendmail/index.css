@@ -1,0 +1,107 @@
+.send-mail-box{
+    width: 100%;
+    margin-top: 90px;
+    padding: 0%
+
+}
+.send-mail-container{
+    width: 84%;
+    margin-left: 8%;
+    margin-right: 8%;
+}
+.send-mail-flexbox{
+  justify-content: space-around;
+    font-family: 'oxanium';
+   
+}
+
+.mail-div{
+    display: flex;
+    flex-direction: column;
+    text-align:left;
+    justify-content: center;
+    position: relative;
+ 
+}
+
+
+.mail-heading{
+    font-family: "oxanium";
+    font-weight: 600;
+    color: white;
+
+    margin-top: -10px;
+  
+
+}
+.mail-heading p{
+    color: blueviolet;
+    display: inline;
+}
+.mail-paragraph{
+    color: white;
+    font-size: 17px;
+    font-family: 'oxanium';
+    margin-top: 7px;
+}
+.mail-paragraphs{
+    color: white;
+    font-size: 17px;
+    font-family: 'oxanium';
+    margin-top: -12px;
+
+}
+.join-our-btn{
+    height: 44px;
+    padding: 14px;
+    width: 180px;
+    font-family: 'oxanium';
+    padding-left: 40px;
+    color: white;
+    padding-right: 40px;
+    border: none;
+    margin-top: 5px;
+    font-weight:700;
+    font-size: 14px;
+    clip-path: polygon(0 0, calc(100% - 15px) 0, 100% 15px, 100% 100%, 0 100%);
+
+   background: linear-gradient( 165deg,rgb(255, 4, 255),hsl(280, 96%, 50%),rgb(50, 8, 240),rgb(86, 178, 248));
+}
+.name-email{
+    display: flex;
+    gap: 10px;
+
+}
+.input-box{
+    background-color: rgba(18, 18, 82, 0.9);
+    font-family: 'oxanium';
+    border: none;
+    padding: 2%;
+   width: 45%;
+    color: white;
+    outline: none;
+    border-radius: 2px;
+    caret-color: white;
+}
+.input-box::placeholder{
+    color: white;
+    font-weight: 600;
+    outline: none;
+    caret-color: white;
+}
+.msg-input-box{
+    background-color:rgba(18, 18, 82, 0.9) ;
+    font-family: 'oxanium';
+    border: none;
+    height: 145px;
+    color: white;
+  width: 100%;
+    outline: none;
+    border-radius: 2px;
+    caret-color: white;
+}
+.msg-input-box::placeholder{
+    color: white;
+    padding: 10px;
+
+}

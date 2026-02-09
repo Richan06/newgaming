@@ -1,0 +1,139 @@
+.full-blogsection-container {
+  margin: 0;
+  padding: 0;
+  margin-top: 100px;
+}
+
+.full-blogsection-width {
+  width: 86%;
+  margin-left: 7%;
+  margin-right: 7%;
+  font-family: 'oxanium';
+}
+
+.blog-box2 {
+  background-color: rgba(12, 12, 53, 0.9);
+  color: white;
+  border-radius: 10px;
+  max-width: 380px;
+}
+
+.blog-inside-img {
+  width: 100%;
+  border-radius: 10px 10px 0 0;
+}
+
+.blog-small-icon {
+  display: flex;
+  gap: 5px;
+  align-items: center;
+  font-family: "oxanium";
+}
+
+.blog-mini-line {
+  width: 30px;
+  height: 5px;
+  background-color: blueviolet;
+  border: none;
+  display: inline-block;
+  margin-top: 4px;
+}
+
+.blog-input-box {
+  color: white;
+  background-color: rgb(15, 14, 57);
+  border: none;
+  padding: 15px;
+  width: 100%;
+}
+
+.whole-search-box {
+  background-color: rgb(15, 14, 57);
+  border: 1px solid rgb(87, 17, 153);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.full-search-box {
+  background-color: rgba(196, 195, 208, 0.2);
+  padding: 20px 30px;
+  margin-top: 20px;
+  height: 70px;
+}
+
+.blog-categories {
+  color: white;
+  margin-top: 20px;
+  background-color: rgba(196, 195, 208, 0.1);
+  padding: 10px;
+  font-family: "oxanium";
+}
+
+.cat-item {
+  display: flex;
+  justify-content: space-between;
+  margin-top: -18px;
+}
+
+.cat-count {
+  background-color: blueviolet;
+  padding: 5px;
+  clip-path: polygon(0% 0%, 80% 0, 100% 20%, 100% 100%, 0 100%);
+}
+
+.page-tag {
+  background-color: blueviolet;
+  padding: 5px;
+  clip-path: polygon(0% 0%, 80% 0, 100% 20%, 100% 100%, 0 100%);
+  width: 20px;
+  color: aliceblue;
+  text-align: center;
+}
+
+.page-tag:hover {
+  background-color: rgb(90, 28, 148);
+}
+
+@media (max-width: 900px) {
+  .full-blogsection-width {
+    width: 94%;
+    margin-left: 3%;
+    margin-right: 3%;
+  }
+
+  .blog-box2 {
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 600px) {
+  .full-blogsection-container {
+    margin-top: 60px;
+  }
+
+  .blog-box2 {
+    max-width: 100%;
+  }
+
+  .blog-sidebar {
+    width: 100%;
+  }
+
+  .blog-small-icon {
+    flex-wrap: wrap;
+    gap: 8px;
+  }
+
+  .page-tag {
+    padding: 8px;
+  }
+}
+.tag-btn{
+  background-color: rgb(105, 82, 152);
+  color: aliceblue;
+  border: none;
+  padding: 5px;
+  margin-left: 5px;
+  margin-top: 5px;
+}

@@ -1,0 +1,20 @@
+.loading-btn{
+        background: #f90cff;
+    background-image: linear-gradient(to right bottom, #f90cff, #e027ff, #c534ff, #a93eff, #8a44ff, #6560ff, #3c73ff, #0081ff, #009cff, #00b3ff, #00c6f5, #0cd7e8);
+    clip-path: polygon(0% 0%, 90% 0, 100% 30%, 100% 100%, 0 100%);
+    color: #fff;
+    font-family: 'Oxanium', sans-serif;
+    font-size: 15px;
+    font-weight: 600;
+    letter-spacing: 0;
+    text-align: center;
+    text-transform: capitalize;
+    display: inline-block;
+    position: relative;
+    min-width: 180px;
+    height: 50px;
+    line-height: 50px;
+    padding: 0 40px;
+    border-radius: 2px;
+    border: none;
+}
